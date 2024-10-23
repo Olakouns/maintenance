@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Creativity - Maintenance</title>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f7f7f7;
+            overflow-y: hidden;
+        }
+
+        .maintenance-container {
+            text-align: center;
+            padding: 12%;
+        }
+
+        h1 {
+            font-size: 2rem;
+            color: #333;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 2rem;
+        }
+
+        #lottie-animation {
+            width: 300px;
+            height: 300px;
+            margin: 0 auto;
+        }
+        .art{
+            color: #E2474F;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="maintenance-container">
+        <div id="lottie-animation"></div>
+        <h1><span class="art">Art Creativity</span> is currently under maintenance</h1>
+        <p>We'll be back soon! Thank you for your patience.</p>        
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.5/lottie.min.js"></script>
+    <script>
+        // Load Lottie animation
+        lottie.loadAnimation({
+        container: document.getElementById('lottie-animation'), // The container element
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        path: 'https://lottie.host/3b6abbff-f4c1-420b-95da-2499d65b92c2/zOsyueYJ6t.json' // URL of Lottie JSON file
+        });
+
+    </script>
+</body>
+
+</html>
